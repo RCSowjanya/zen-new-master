@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  font-family: "Poppins", sans-serif;
+}
+.rotate-animation {
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body {
+  background: linear-gradient(to bottom right, #f0f4f8, #e0e7ef);
+}
+.uae-bg {
+  background: url("/public/images/uae.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 30rem;
+}
+html {
+  scroll-behavior: smooth; /* This applies smooth scrolling to the entire document */
+}
+#form {
+  padding-top: 4rem; /* Adjust according to your navbar height */
+  margin-top: -4rem; /* Negative margin to pull it back into view */
+}
